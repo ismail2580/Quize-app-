@@ -1,0 +1,384 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+.myQuizApp {
+  position: absolute;
+  width: 320px;
+  height: 600px;
+  left: 50%;
+  top: 50%;
+  background-color: #fff;
+  box-shadow: rgb(0 0 /10%) 0px 10px 50px;
+  border-radius: 40px;
+  transform: translate(-50%, -50%);
+}
+
+.img img {
+  width: 100%;
+}
+
+.text1 {
+  width: 90%;
+  margin: auto;
+}
+
+.text1 h3 {
+  margin-top: 20px;
+}
+
+.button button {
+  position: absolute;
+  font-size: 20px;
+  font-weight: 600;
+  background: tomato;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 10px 25px;
+  cursor: pointer;
+  border-radius: 57px 0px 51px 0px;
+  right: 0;
+  bottom: 0;
+  transition: 0.2s ease-in-out;
+}
+
+.button button:hover {
+  background-color: rgb(29, 194, 194);
+}
+
+.RulesBox {
+  position: absolute;
+  width: 320px;
+  height: 600px;
+  left: 50%;
+  top: 50%;
+  background-color: #fff;
+  box-shadow: rgb(0 0 /10%) 0px 10px 50px;
+  border-radius: 40px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.RulesBox.activeInfo {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 5;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.RulesTitle {
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.RulesList {
+  width: 80%;
+  margin: auto;
+}
+
+.RulesList {
+  margin-top: 20px;
+}
+
+ol li {
+  font-size: 17px;
+  font-weight: 500;
+  padding: 10px 20px;
+}
+
+.Buttons button {
+  position: absolute;
+  font-size: 20px;
+  font-weight: 600;
+  background: tomato;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 10px 25px;
+  cursor: pointer;
+  bottom: 0;
+  transition: 0.2s ease-in-out;
+}
+
+.Buttons .ContinueButton {
+  right: 0;
+  border-radius: 57px 0px 51px 0px;
+}
+
+.Buttons .ExitButton {
+  left: 0;
+  border-radius: 0px 57px 0px 51px;
+}
+
+.Buttons .ExitButton:hover
+{ background-color: red;
+
+}
+.Buttons .ContinueButton:hover {
+  background-color: rgb(29, 194, 194);
+}
+
+.Questions {
+  width: 320px;
+  height: 620px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+  box-shadow: rgb(0 0 0 / 10%) 0px 10px 50px;
+  transform: translate(-50%, -50%);
+  border-radius: 48px;
+  opacity: 0;
+  pointer-events: none;
+}
+.Questions.activeInfo{
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 8;
+  transform: translate(-50%, -50%) scale(1);
+}
+.QuestionsHeader {
+  position: relative;
+  z-index: 2;
+  height: 70px;
+  padding: 0 30px;
+  border-radius: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.QuestionsHeader .title {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.TimeCount {
+  color: #004085;
+  background: #cce5ff;
+  border: 1px solid #b8daff;
+  height: 25px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 120px;
+}
+
+.Seconds {
+  font-size: 18px;
+  font-weight: 500;
+  height: 26px;
+  width: 45px;
+  color: #fff;
+  border-radius: 5px;
+  line-height: 26px;
+  text-align: center;
+  background: #343a40;
+  border: 1px solid #343a40;
+  user-select: none;
+}
+
+.time_lines {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 3px;
+  background: #007bff;
+}
+
+.section {
+  padding: 25px 30px 25px 30px;
+}
+
+.text {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.MyOptions {
+  padding: 20px 0px;
+  display: block;
+}
+
+.options {
+  background: aliceblue;
+  border: 1px solid #84c5fe;
+  border-radius: 5px;
+  padding: 8px 15px;
+  font-size: 17px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.options:hover {
+  color: #004085;
+  background: #cce5ff;
+  border: 1px solid #b8daff;
+}
+
+footer {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid lightgrey;
+
+}
+
+.total_que {
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+
+
+
+footer button {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 6px 25px;
+  outline: none;
+  border: none;
+  border-radius: 57px 0px 51px 0px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 10px 50px;
+  background: tomato;
+  cursor: pointer;
+  color: #f1f1f1;
+  transition: all 0.3s ease;
+  margin-top: 11px;
+  display: none;
+
+}
+
+footer .nextBtn:hover {
+  background-color: rgb(29, 194, 194);
+
+}
+.options.correct{
+  color: #155724;
+  background: #d4deed;
+  border: 1px solid #c3e6cb;
+}
+.options.wrong{
+  color: #721c24;
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+.options.disabled{
+  pointer-events: none;
+}
+.Questions header .time_lines{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  background: #007bff;
+}
+.resultBox{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  width: 320px;
+  height: 600px;
+  display: flex;
+  background: #fff;
+  border-radius: 45px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  pointer-events:none;
+  opacity: 0;
+}
+.resultImg img{
+  width: 100%;
+  height: 170px;
+  margin-bottom: 180px;
+}
+.completdText{
+  font-size: 20px;
+  font-weight: 500;
+}
+.scoreText span {
+  display: flex;
+  margin: 10px 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+.scoreText span p{
+  font-size: 17px;
+  padding: 0 4px;
+  color: #007bff;
+  font-weight: 600;
+
+}
+.resultBox .buttons {
+  display: flex;
+  margin: 20px 0;
+}
+.resultBox .buttons button {
+  margin: 0 10px;
+  height: 45px;
+  padding: 0 20px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 45px;
+  transition: all 0.3s ease;
+}
+.restart1{
+  background: tomato;
+  color: #fff;
+}
+.restart1:hover{
+  background: #3385ddd9;
+}
+.quit{
+  background-color: tomato;
+  color: #fff;
+}
+.quit:hover{
+  background: red;
+}
+.resultBox.activeResult{
+  z-index: 5;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  pointer-events: auto;
+}
+
+
+
+
+
+/* .TimeLeft {
+  font-weight: 400;
+  font-size: 15px;
+  user-select: none;
+}
+.fa-check-circle{
+  color: #155724;
+}
+.fa-times-circle {
+  color: #721c24;
+}
+.options.disabled{
+pointer-events: none;
+} */
